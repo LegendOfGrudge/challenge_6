@@ -1,0 +1,25 @@
+<%= form_with model: @customer do |form| %>
+  <div>
+    <%= form.label :full_name %><br>
+    <%= form.text_field :full_name %>
+  </div>
+
+  <div>
+    <%= form.label :phone_number %><br>
+    <%= form.text_area :phone_number %>
+  </div>
+
+  <div>
+    <%= form.label :email_address %><br>
+    <%= form.text_area :email_address %>
+  </div>
+
+  <div>
+    <%= form.label :notes %><br>
+    <%= form.text_area :notes %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
