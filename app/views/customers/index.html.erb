@@ -1,9 +1,9 @@
 <h1>Customers</h1>
 
-<ul>
+<ul class="customer_list">
   <% @customers.each do |customer| %>
     <li>
-      <%= link_to customer.full_name, customer %>
+      <%= render "customer", customer: customer %>
     </li>
   <% end %>
 </ul>
